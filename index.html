@@ -8,6 +8,67 @@
   <title>Chaitanya Joshi</title>
 
   <style>
+    
+.research-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.research-card {
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.035),
+    rgba(255, 255, 255, 0.012)
+  );
+}
+
+.research-type {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.research-card h3 {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.research-card p {
+  margin: 0 0 1.2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.research-meta {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.research-link {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.research-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .research-list {
+    grid-template-columns: 1fr;
+  }
+}
+
     :root {
       color-scheme: dark;
       --bg: #0b0f14;
@@ -410,6 +471,47 @@
           </article>
         </div>
       </section>
+
+      
+<section id="research" aria-labelledby="research-title">
+  <div class="section-heading">
+    <h2 id="research-title">Research &amp; Innovation</h2>
+    <span>Ideas explored beyond the everyday</span>
+  </div>
+
+  <div class="research-list">
+    <article class="research-card">
+      <span class="research-type">PATENT FILING</span>
+      <h3>Agriculture Farm Management System with Multimodal Soil Sensors</h3>
+      <p>
+        An innovation exploring the use of multimodal soil sensing
+        for agriculture and farm management.
+      </p>
+      <span class="research-meta">USPTO · 86312127</span>
+    </article>
+
+    <article class="research-card">
+      <span class="research-type">IEEE PUBLICATION</span>
+      <h3>
+        Target Detection in Hyperspectral Imagery Using
+        Atmospheric-Spectral Modeling and Deep Learning
+      </h3>
+      <p>
+        Research exploring hyperspectral image target detection
+        through atmospheric-spectral modeling and deep learning.
+      </p>
+      <a
+        class="research-link"
+        href="https://ieeexplore.ieee.org/document/9924166"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read the paper on IEEE Xplore <span aria-hidden="true">↗</span>
+      </a>
+    </article>
+  </div>
+</section>
+
 
       <section aria-labelledby="now-title">
         <div class="section-heading">
